@@ -1,0 +1,20 @@
+{
+    "reg": [
+      {
+        "Nombre": 0,
+        "Apellido": "abcd",
+        "Cedula": "xxxx",
+        "Especialidad": "abcd",
+        "Consultorio": "abcd",
+        "Correo": "abcd"
+      },
+      {
+        "Nombre": 1,
+        "Apellido": "abcd",
+        "Cedula": "xxxx",
+        "Edad": "abcd",
+        "Telefono": "abcd",
+        "Especialidad": "abcd"
+      }
+    ]
+  }

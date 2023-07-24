@@ -1,6 +1,13 @@
 const {Router} = express.Router()
 const router = Router ();
 
+const {
+	getreg,
+	addreg,
+	updatereg,
+	deletereg
+} = require('../c/conrut');
+
 router.get('/', (req, res) => {
 res.render(' index.ejs')
 });
@@ -32,5 +39,11 @@ router.post('/new-entry', (req, res) => {
 
  res.redirect('/');
 });
+
+router.route('/')
+	.get(getProducts)
+	.post(addProduct)
+	.put(updateProduct)
+	.delete(deleteProduct)
 
 module.exports = router;

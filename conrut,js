@@ -1,0 +1,63 @@
+let { reg } = require('../db.json');
+
+module.exports = {
+  getProducts: (req, res) => {
+  	res.json({reg});
+  },
+
+  addProduct: (req, res) => {
+  	var { reg } = req.body;
+
+  	reg.push({
+  		nombre: reg.length,
+        apellido,
+        cedula,
+        especialidad,
+        consultorio,
+        correo,
+        edad,
+        telefono
+
+  		
+  	});
+
+  	res.json({
+  		success: true,
+  		msg: 'realice'
+  	});
+  },
+
+  updatereg: (req, res) => {
+  	const { nombre } = req.body;
+  	const { apellido }  = req.body;
+    const { cedula }  = req.body;
+    const { especialidad }  = req.body;
+    const { consultorio }  = req.body;
+    const { correo }  = req.body;
+    const { edad }  = req.body;
+    const { telefono }  = req.body;
+  	var found = false;
+
+  	reg.forEach((reg) => {
+  		if(!found && reg.id === Text(id))
+        reg.splice
+  	});
+
+  	res.send('realice');
+  },
+
+  deletereg: (req, res) => {
+  	var id = req.params.id;
+
+  	var found = false;
+
+  	reg.forEach(function(reg) {
+  		if(!found && reg.id === Text(id)) {
+  			reg.splice(index, 1);
+  		}
+  	});
+
+  	res.send('realice');
+  }
+
+}

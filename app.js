@@ -1,7 +1,8 @@
-const express = require('express');
+const express = require ('express');
 const app = express();
 const path = require ('path');
 const morgan = require ('morgan');
+const index = require('./rut/index')
 
 app.set('port', 5000);
 app.set('v', path.join(__dirname, 'v'))
